@@ -1,0 +1,128 @@
+Equality
+
+```{r}
+"Rchitect" != "rchitect"
+TRUE == FALSE
+-6*44 != 17 - 101
+TRUE == 1
+
+-6*5+2 >= -10+1
+"rating" <= "rating dogs"
+TRUE < FALSE
+
+```
+
+Compare vectors 
+
+```{r}
+
+linkedin <- c(16,9,13,5,2,17,14)
+Facebook <- c(17,9,16,5,2,13,14)
+
+linkedin < 15
+Facebook < 15
+
+linkedin > Facebook
+```
+
+Compare matrices
+
+```{r}
+views <- matrix(c(linkedin, Facebook), nrow=2, byrow=TRUE)
+views
+
+views == 13
+views <= 14  
+```
+
+& and 
+
+```{r}
+
+linkedin
+last <- tail(linkedin,1)
+
+last < 5| last < 10 
+last < 15 & last <= 20
+
+linkedin > 10 & Facebook < 10 
+linkedin >= 12 | Facebook >= 10 
+```
+
+The if statement
+
+```{r}
+
+medium <- "linkedin"
+num_views <- 14
+
+if(medium == "linkedin"){
+  print("Showing linkedin information")
+} else if (medium == "Facebook"){
+  print()
+} else {
+  print("Unknow medium")
+}
+if(num_views > 15){
+  print("you are popular")
+} else if (num_views){
+  print()
+} else {
+  print
+}
+  
+  
+```
+
+```{r}
+
+result <- ""
+number <- 6
+
+if(number < 10){
+  if(number < 5){
+    result <- "extra small"  
+  } else {
+    result <- "Small"
+}
+}  else if (number < 100){
+    result <- "medium"
+} else {
+    result <- "large"
+}
+```
+
+write a while loop
+
+```{r}
+
+speed <- 64
+ 
+while (speed > 30){
+  print("Slow down!")
+  speed <- speed - 7
+}
+
+speed
+
+while (speed>30){
+  print(paste("you speed is", speed))
+  if(speed >= 48){
+    print("Slow down big time!")
+    speed
+  }
+}
+```
+
+Build a while loop from scratch
+
+```{r}
+
+i <- 1
+
+while (i<=10){
+  print(3)
+  if((i*8))
+}
+```
+
